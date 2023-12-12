@@ -1,6 +1,0 @@
-
-
-#sed
-sed -i 's/search_for/replace_with/g' /path/filename
-#sed scripting
-
