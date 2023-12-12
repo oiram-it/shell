@@ -1,17 +1,6 @@
-scripting
 
-# Check if script is run by root.
-if [ "$(id -u)" -ne 0 ] ; then
-    echo 'This script must be run as root or with the sudo command.'
-    exit 1
-fi
 
 #sed
 sed -i 's/search_for/replace_with/g' /path/filename
 #sed scripting
-#!/bin/bash
 
-for file in `cat namefile.txt`
-do
-        sed -i.bak 's|search_for/with_slash|replace_string|g' $file
-done
